@@ -12,7 +12,7 @@
 }
 
 /* Effetti */
-.ex-1-square, .ex-2-square, .ex-7-img, .ex-8-img {
+.ex-1-square, .ex-2-square, .ex-7-img, .ex-8-img, .ex-9-img {
     transition: 2s;
 }
 
@@ -44,6 +44,11 @@
     opacity: 0;
 }  
 
+/* Esercizio 5 */
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
 /* Esercizio 6 */
 .ex-6-img:hover {
     filter: grayscale(1);
@@ -52,13 +57,19 @@
 /* Esercizio 7 */
 .ex-7-img:hover {
     filter: sepia(0.6);
-    
 }
 
 /* Esercizio 8 */
 .ex-8-img:hover {
     border-radius: 20px;
     filter: sepia(0.8);
+}
+
+/* Esercizio 9 */
+.ex-9-img:hover {
+    border-radius: 20px;
+    filter: sepia(0.8);
+    transform: scale(1.5);
 }
 
 /* Esercizio 11 */
