@@ -1,16 +1,3 @@
-/* Esercizi 10 e 11 */
-@keyframes spin {
-    0% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin2 {
-    75% {
-        transform: rotate(320deg);
-    }
-}
-
 /* Effetti */
 .ex-1-square, .ex-2-square, .ex-7-img, .ex-8-img, .ex-9-img {
     transition: 2s;
@@ -49,6 +36,10 @@
     transform: scale(2);
 }
 
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
 /* Esercizio 6 */
 .ex-6-img:hover {
     filter: grayscale(1);
@@ -72,9 +63,52 @@
     transform: scale(1.5);
 }
 
+/* Esercizi 10 */
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Esercizio 11 */
 .ex-11-icon:hover {
     animation: spin2 2s linear;
+} 
+
+@keyframes spin2 {
+    75% {
+        transform: rotate(320deg);
+    }
 }
 
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: white1 2s;
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: white2 2s;
+}
 
+@keyframes white1 {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+ @keyframes white2 {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}  
